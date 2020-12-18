@@ -20,12 +20,4 @@ if (namber <= 100 && namber >= -100) {
   } else {
     console.log("namber = 0");
   }
-  let max = 100;
-  for (i = 2; i < max; i++) {
-    for (let j = 2; j < max; j++) {
-      if (i % j == 0) {
-        console.log(i);
-      }
-    }
-  }
 }
