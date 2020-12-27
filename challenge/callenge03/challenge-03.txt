@@ -1,0 +1,72 @@
+1. Написать функцию которая принимает произвольной длины массив чисел,
+а возвращает массив в обратном порядке.
+function reverse(values: any[]): any[] {
+    // your code here
+    return undefined;
+}
+2. Написать функцию которая принимает число,
+а возвращает массив из чисел этого числа.
+function numberToArray(value: number): number[] {
+    // your code here
+    return 0;
+}
+Пример:
+numberToArray(12345) -> [1, 2, 3, 4, 5]
+numberToArray(0) -> [0]
+numberToArray(987) -> [9, 8, 7]
+Пример:
+reverse([1, 2, 3, 4, 5, 6, 7, 8, 9]) ->  [9, 8, 7, 6, 5, 4, 3, 2, 1];
+reverse([1, 2, 2, 1]) ->  [1, 2, 2, 1]
+reverse([6, 3, 7])) -> [7, 3, 6] 
+3. Написать функцию которая принимает произвольной длины массив чисел,
+а возвращает массив длиною три. Где первый элемент нового массива это первый элемент исходного массива,
+второй элемент это третий, а третий элемент это предпоследний.
+function easyUnpack(values: any[]): any[] {
+    // your code here
+    return undefined;
+}
+Пример:
+easyUnpack([1, 2, 3, 4, 5, 6, 7, 9]) ->  [1, 3, 7];
+easyUnpack([1, 1, 1, 1]) ->  [1, 1, 1]
+easyUnpack([6, 3, 7])) -> [6, 7, 3] 
+4. Написать функцию которая принимает произвольной длины массив чисел,
+а возвращает количество нулей содержащихся в этом массиве.
+function zeroesAmount(values: any[]): number {
+    // your code here
+    return 0;
+}
+Пример:
+zeroesAmount([1, 2, 3]) -> 0
+zeroesAmount([1, 0, 1, 0]) -> 2
+zeroesAmount([0, 0, 1, 0, 0]) -> 4
+5*. Написать функцию которая принимает произвольной длины массив чисел,
+а возвращает количество нулей содержащихся в КОНЦЕ этого массива.
+function zeroesAmount(values: any[]): number {
+    // your code here
+    return 0;
+}
+Пример:
+zeroesAmount([1, 2, 3, 4, 5]) -> 0
+zeroesAmount([1, 0, 1, 0, 0]) -> 2
+zeroesAmount([0, 0, 1, 0, 1]) -> 0
+6. Написать функцию которая принимает произвольной длины массив данных,
+а возвращает отфильтрованный массив чисел.
+function numberFilter(values: any[]): number{
+    // your code here
+    return 0;
+}
+Пример:
+numberFilter(['Hello', 1, 'World!']) -> [1]
+numberFilter(['array', [], 'length of', 5, 5]) -> [5, 5]
+numberFilter([0, 0, 1, 'o', 1, null]) -> [0, 0, 1]
+
+
+
+
+
+
+
+
+
+
+
