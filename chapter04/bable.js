@@ -37,9 +37,15 @@ var scores = [
   44,
 ];
 var output;
+let highScore = 0;
+
 for (i = 0; i < scores.length; i++) {
   output = "Bubble solution # " + i + " score" + scores[i];
   console.log(output);
+  if (scores[i] > highScore) {
+    highScore = scores[i];
+  }
 }
 
-console.log(scores.length - 1);
+console.log("Bubbles tests: " + scores.length);
+console.log("Highest bubble score: " + highScore);
