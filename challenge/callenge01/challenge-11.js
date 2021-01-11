@@ -1,5 +1,5 @@
-for (num = 0; num <= 100; num + 2) {
-  if (num % 2 == 0) {
-    console.log(num);
+for (i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
   }
 }

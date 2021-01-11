@@ -4,7 +4,7 @@ function number(num) {
 
   result.push(num[0]);
   result.push(num[2]);
-  result.push(num[num.length - 1]);
+  result.push(num[num.length - 2]);
 
   return result;
 }

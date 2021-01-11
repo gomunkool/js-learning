@@ -1,15 +1,16 @@
 let number = [1, 2, 4, 0, 0, 34, 2, 0, 123, 0, 1];
 
-function count(num) {
-  let i = 0;
-  let summa = [];
-  while (i < number.length) {
-    if (number[i] === 0) {
-      summa.push(number[i]);
+function zeroesAmount(num) {
+  let summaZero = [];
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] === 0) {
+      summaZero.push(num[i]);
     }
-    i = i + 1;
   }
-  console.log(summa.length);
+  return summaZero.length;
 }
 
-count(number);
+console.log(zeroesAmount(number));
+console.log(zeroesAmount([1, 2, 3]));
+console.log(zeroesAmount([1, 0, 1, 0]));
+console.log(zeroesAmount([0, 0, 1, 0, 0]));

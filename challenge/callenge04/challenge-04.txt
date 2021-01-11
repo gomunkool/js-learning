@@ -1,0 +1,51 @@
+1. Написать функцию которая принимает произвольной длины массив,
+а возвращает его длину.
+function arrayLength(values: anu[]): number {
+    // your code here
+    return undefined;
+}
+Пример:
+arrayLength(['!', '@', '#']) -> 3
+arrayLength([1, 2, 3, 4, 5]) -> 5
+arrayLength([]) -> 0
+2. Написать функцию которая принимает произвольной длины массив,
+а возвращает строку.
+function arrayToString(values: anu[]): string {
+    // your code here
+    return undefined;
+}
+Пример:
+arrayToString(['Hello', ' ', 'World', '!', '!', '!']) -> 'Hello World!!!'
+arrayToString([1, 2, 3, 4, 5]) -> '12345'
+arrayToString(['my', 88, '@', 'mail', '.', 'com']) -> 'my88@mail.com'
+3. Написать функцию которая принимает произвольной длины массив строк и слово в качестве второго аргумента.
+Необходимо заменить все вхождения слов 'replace' на это слово и вернуть изменённый массив.
+function replace(values: string[]): string[] {
+    // your code here
+    return undefined;
+}
+Пример:
+replace(['apple', 'orange', 'replace', 'orange', 'replace', 'replace'], 'peach') -> ['apple', 'orange', 'peach', 'orange', 'peach', 'peach']
+replace(['rabbit', 'replace', 'rabbit', 'replace', 'replace', 'rabbit'], 'rabbit') -> ['rabbit', 'rabbit', 'rabbit', 'rabbit', 'rabbit', 'rabbit']
+replace(['wolf', 'dog', 'wolf', 'hyena', 'hyena', 'wolf'], 'cat') -> ['wolf', 'dog', 'wolf', 'hyena', 'hyena', 'wolf']
+4. Написать функцию которая принимает произвольной длины массив строк и слово в качестве второго аргумента.
+Необходимо вернуть суму индексов первого и последнего вхождения этого слова в массив.
+Если такой индекс отсутвует то прибавлять 0.
+function sumOfWordIndexes(values: string[]): number {
+    // your code here
+    return undefined;
+}
+Пример:
+sumOfWordIndexes(['apple', 'orange', 'peach', 'orange', 'peach', 'peach'], 'peach') -> 7
+sumOfWordIndexes(['cow', 'rabbit', 'cow', '', '', 'cow'], 'cow') -> 5
+wordIndexes(['wolf', 'dog', 'wolf', 'hyena', 'hyena', 'wolf'], 'cat') -> 0
+5. Написать функцию которая принимает произвольной длины массив строк и слово в качестве второго аргумента.
+Необходимо вернуть массив с индексами вхождения этого слова в массив
+function wordIndexes(values: string[]): number[] {
+    // your code here
+    return undefined;
+}
+Пример:
+wordIndexes(['apple', 'orange', 'peach', 'orange', 'peach', 'peach'], 'peach') -> [2, 4, 5]
+wordIndexes(['cow', 'rabbit', 'cow', '', '', 'cow'], 'rabbit') -> [1]
+wordIndexes(['wolf', 'dog', 'wolf', 'hyena', 'hyena', 'wolf'], 'cat') -> []
