@@ -1,5 +1,5 @@
 function usdcny(usd) {
-  return (usd * 675) / 100 + " Chinese Yuan";
+  return ((usd * 675) / 100).toFixed(2) + " Chinese Yuan";
 }
 
 console.log(usdcny(15));
