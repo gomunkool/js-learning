@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Пример веб-страницы</title>
+  </head>
+  <body>
+    <h1>Заголовок</h1>
+    <!-- Комментарий -->
+    <p>Первый абзац.</p>
+    <p>Второй абзац.</p>
+  </body>
+  <script>
+    var taxi = {
+      make: "Webville Motors",
+      model: "Taxi",
+      year: 1955,
+      color: "yellow",
+      passengers: 4,
+      convertible: false,
+      mileage: 281341,
+    };
+    function prequal(car) {
+      if (car.mileage > 10000) {
+        return false;
+      } else if (car.year > 1960) {
+        return false;
+      }
+      return true;
+    }
+    var worthALook = prequal(taxi);
+    if (worthALook) {
+      console.log("You gotta check out this " + taxi.make + " " + taxi.model);
+    } else {
+      console.log(
+        "You should really pass on the " + taxi.make + " " + taxi.model
+      );
+    }
+  </script>
+</html>
