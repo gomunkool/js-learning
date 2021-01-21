@@ -1,5 +1,5 @@
 function cockroachSpeed(s) {
-  return (s * 27.7777777777778).toFixed();
+  return Number((s * 27.7777777777778).toFixed());
 }
 
 console.log(cockroachSpeed(1.08));
