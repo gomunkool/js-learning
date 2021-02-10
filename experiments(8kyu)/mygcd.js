@@ -1,12 +1,12 @@
 function mygcd(x, y) {
   let e;
-  if (x >= y) {
+  if (x <= y) {
     e = x;
   } else {
     e = y;
   }
 
-  for (let i = e; i >= 1; i - 1) {
+  for (let i = e; i >= 1; i--) {
     if (x % i == 0 && y % i == 0) {
       return i;
     }
