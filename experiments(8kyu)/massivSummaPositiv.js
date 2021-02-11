@@ -1,13 +1,15 @@
 function positiveSum(arr) {
+  let sum = 0;
+
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 0) {
-      let sum = 0 + arr[i];
+      sum = sum + arr[i];
     }
   }
   return sum;
 }
 
-console.log(positiveSum([1, 2, 3, 4, 5]));
+console.log(positiveSum([1, 2, 3, 4, 5, -6]));
 console.log(positiveSum([1, -2, 3, 4, 5])); //,13);
 console.log(positiveSum([])); //,0);
 console.log(positiveSum([-1, -2, -3, -4, -5])); //,0);
