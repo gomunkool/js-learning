@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+body {
+  background-color: rgb(214, 212, 212);
+}
+.contaner {
+  margin: 40px;
+}
+h1,
+h2 {
+  font-size: 45px;
+  margin: 20px;
+}
+div {
+  margin: 20px;
+}
+button {
+  background: rgb(214, 212, 212);
+  border: black solid 0.5px;
+  width: 200px;
+  height: 40px;
+  margin-top: 70px;
+}
+.inputs-block {
+  display: flex;
+}
+input {
+  padding: 8px;
+  width: 200px;
+  height: 40px;
+}
+
+input:focus {
+  border: black 3px solid;
+}
+
+.input-item-title {
+  font-size: 30px;
+}
+.input.error {
+  border: tomato 3px solid;
+}
+
+.eng-word {
+  font-size: 45px;
+  padding: 10px 30px 10px 10px;
+}
+
+.rus-word {
+  font-size: 45px;
+  padding: 10px 10px 10px 30px;
+}
+.button-delit {
+  margin: 0px 0 0 40px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 30px;
+}
