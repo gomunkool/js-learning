@@ -10,3 +10,8 @@ const wooden = {
   size: 0,
   lever: true,
 };
+
+const refrigreiyot = {
+electrical
+
+};
