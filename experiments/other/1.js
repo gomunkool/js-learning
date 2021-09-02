@@ -1,6 +1,3 @@
-const arr = [];
-for (let i = 0; i < 5; i++) {
-  console.log(arr);
-  arr.push(i);
-}
-console.log(arr);
+let a = '4' * '9'
+
+typeof a
