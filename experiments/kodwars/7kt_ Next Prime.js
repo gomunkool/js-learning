@@ -1,15 +1,20 @@
 function nextPrime(n) {
-  let i = 2
-  let x = n + 1
-
-  while (x >= i) {
-    if (x % i === 0) {
-      i++ //?
-      x++ //?
+  if (n === 1 || n === 0) {
+    return 2
+  }
+  const seive = []
+  for (let i = 2; i <= n + 1000; i++) {
+    if (!seive[i]) {
+      for (let j = i * i; j <= n + 1000; j += i) {
+        seive[j] = true
+      }
+    }
+  }
+  for (let i = n + 1; i < n + 10000; i++) {
+    if (!seive[i]) {
+      return i
     }
   }
 }
 
-console.log(nextPrime(5)) // 7)
-
-// nextPrime(2971) //2999;
+nextPrime(1000000) //2999;

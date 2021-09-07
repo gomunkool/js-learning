@@ -66,13 +66,13 @@ function tree(trunks) {
     }
   }
   this.chopLeaf = function (n) {
-    console.log(this.trunks)
-    console.log(this.branches)
-    console.log(this.twigs)
-    console.log(this.leaves)
-    console.log(n)
+    // console.log(this.trunks)
+    // console.log(this.branches)
+    // console.log(this.twigs)
+    // console.log(this.leaves)
+    // console.log(n)
 
-    if (n >= this.twigs) {
+    if (n >= this.leaves) {
       this.leaves = 0
     } else {
       this.leaves -= n
