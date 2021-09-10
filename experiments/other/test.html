@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1</title>
+    <meta charset="utf-8" />
+    <title>Click me!</title>
+    <style>
+      body,
+      button {
+        margin: 10px;
+      }
+      div {
+        padding: 10px;
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        var div = document.getElementById('message')
+
+        div.innerHTML = '111'
+
+        var count = 0
+        var message = 'You clicked me '
+        var button = document.getElementById('clickme')
+        button.onclick = function () {
+          count++
+          div.innerHTML = message + count + ' times!'
+        }
+        console.log(button)
+        console.log(count)
+      }
+    </script>
   </head>
   <body>
-    <p>sddsfdfdfasdfs</p>
-    <script src="1.js"></script>
+    <button id="clickme">Click me!</button>
+    <div id="message"></div>
   </body>
 </html>

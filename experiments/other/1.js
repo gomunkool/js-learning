@@ -1,3 +1,7 @@
-let a = '4' * '9'
-
-typeof a
+function handler() {
+  alert(doneMessage)
+}
+function makeTimer(doneMessage, n) {
+  setTimeout(handler, n)
+}
+makeTimer('Cookies are done!', 1000)
