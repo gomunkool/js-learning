@@ -1,7 +1,4 @@
-function handler() {
-  alert(doneMessage)
+function foo() {
+  console.log(arguments)
 }
-function makeTimer(doneMessage, n) {
-  setTimeout(handler, n)
-}
-makeTimer('Cookies are done!', 1000)
+foo(1, 2, 3, 4, 5)
