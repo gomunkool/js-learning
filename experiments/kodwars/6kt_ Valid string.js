@@ -1,19 +1,35 @@
+let arrVneshn
+let dictionaryVneshn
 var validWord = function (dictionary, word) {
-  const arrWord = word.split('')
-  for (let i = 0; i < dictionary.length; i++) {
-    let length = dictionary[i].length
-    let arr = []
-    for (let j = 0; j < arrWord.length - length + 1; j++) {
-      let trim = arrWord.slice(j, j + length).join('')
-      arr.push(trim)
-    }
-    console.log(dictionary[i])
-    console.log(arr.includes(dictionary[i]))
+  // dictionary = dictionary.sort((a, b) => a.length - b.length)
+  dictionaryVneshn = dictionary
 
-    if (!arr.includes(dictionary[i])) {
-      return false
+  let arrWord = word.split('')
+  arrVneshn = arrWord
+  for (let i = 0; i < dictionaryVneshn.length; i++) {
+    let arr = []
+    for (
+      let j = 0;
+      j < arrVneshn.length - dictionaryVneshn[i].length + 1;
+      j++
+    ) {
+      arr.push(arrVneshn.slice(j, j + dictionaryVneshn[i].length).join(''))
+    }
+    if (arr.includes(dictionaryVneshn[i])) {
+      let index = arr.indexOf(dictionaryVneshn[i])
+      arrVneshn.splice(index, dictionaryVneshn[i].length)
+      arrVneshn = arrVneshn.join('')
+
+      // dictionaryVneshn.splice(i, 1)
+      validWord(dictionaryVneshn, arrVneshn)
     }
   }
-  return true
+
+  if (arrVneshn.length === 0) {
+    return true
+  } else {
+    return false
+  }
 }
-console.log(validWord(['code', 'star', 'wars'], 'starwars'))
+
+console.log(validWord(['e', 'd', 'mew', 'ncq', 'awyb', 'oizx'], 'emewncqdawyb'))
