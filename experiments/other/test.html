@@ -1,78 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Click me!</title>
-    <style>
-      body,
-      button {
-        margin: 10px;
-        color: #0000ff;
-        background-color: #aaa;
-        background-image: #aaa;
-
-        background-position: #aaa;
-
-        background-repeat: #aaa;
-      }
-      div {
-        padding: 10px;
-      }
-      li {
-        font-size: 2rem;
-      }
-      li .p {
-        font-size: 200%;
-        padding: 10px 20px;
-        margin: 30px;
-        border: 5px solid #040;
-      }
-    </style>
-    <script>
-      window.onload = function () {
-        var div = document.getElementById('message')
-
-        div.innerHTML = '111'
-
-        var count = 0
-        var message = 'You clicked me '
-        var button = document.getElementById('clickme')
-        button.onclick = function () {
-          count++
-          div.innerHTML = message + count + ' times!'
-        }
-        console.log(button)
-        console.log(count)
-      }
-    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" />
+    <title>Document</title>
   </head>
   <body>
-    <pre>dscsd           dcd</pre>
-    <paragraph>csddddd csd csdcd</paragraph>
-    <para> csasacsa sxasxss</para>
-    <p>dscsdvd vsdvsd</p>
-    <span>dcsdcd dvsdd</span>
+    <div class="test">
+      hello world!!!!
+      <p>by world!!!</p>
+      <div class="aaa">by world!!!</div>
+    </div>
+    <p class="content">by world!!!!</p>
 
-    <li>
-      <p class="p">ffffffffff</p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam
-      corrupti quibusdam, doloremque, temporibus distinctio voluptatum soluta
-      magni magnam deserunt earum voluptate beatae, veniam non provident sequi
-      harum assumenda corporis.
-    </li>
-    <li>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam
-      corrupti quibusdam, doloremque, temporibus distinctio voluptatum soluta
-      magni magnam deserunt earum voluptate beatae, veniam non provident sequi
-      harum assumenda corporis.
-    </li>
-    <li>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam
-      corrupti quibusdam, doloremque, temporibus distinctio voluptatum soluta
-      magni magnam deserunt earum voluptate beatae, veniam non provident sequi
-      harum assumenda corporis.
-    </li>
-    <button id="clickme">Click me!</button>
-    <div id="message"></div>
+    <div class="flex">
+      <div class="one">11111111</div>
+      <div class="2">222222222</div>
+      <div class="3">3333333333</div>
+      <div class="four">44444444</div>
+    </div>
   </body>
 </html>

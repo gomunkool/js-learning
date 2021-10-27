@@ -1,15 +1,15 @@
-const engWord = document.getElementById("eng"),
-  rusWord = document.getElementById("rus"),
-  inputs = document.getElementsByClassName("input"),
-  addButton = document.getElementById("add-word-btn"),
-  table = document.getElementById("table");
+const engWord = document.getElementById('eng'),
+  rusWord = document.getElementById('rus'),
+  inputs = document.getElementsByClassName('input'),
+  addButton = document.getElementById('add-word-btn'),
+  table = document.getElementById('table')
 
-let words;
-let btnsDelete;
+let words
+let btnsDelete
 
 localStorage.length < 1
   ? (words = [])
-  : (words = JSON.parse(localStorage.getItem("words")));
+  : (words = JSON.parse(localStorage.getItem('words')))
 
 const addWordToTable = (index) => {
   table.innerHTML += `
@@ -20,13 +20,19 @@ const addWordToTable = (index) => {
        <button class="button-delit">X</button>
       </td>
 </tr>
-  `;
-};
-words.forEach((element, i) => {
-  addWordToTable(i);
-});
+  `
+}
+// words.forEach((element, i) => {
+//   addWordToTable(i)
+// })
 
-addButton.addEventListener("click", () => {
+addButton.addEventListener('click', (event) => {
+  console.log(event.stopPropagation)
+  // preventPropagation
+
+  // preventDefault
+
+  // stopPropagation
   if (
     engWord.value.length < 1 ||
     rusWord.value.length < 1 ||
@@ -34,42 +40,42 @@ addButton.addEventListener("click", () => {
     !isNaN(rusWord)
   ) {
     for (let key of inputs) {
-      key.classList.add("error");
+      key.classList.add('error')
     }
   } else {
     for (let key of inputs) {
-      key.classList.remove("error");
+      key.classList.remove('error')
     }
-    words.push(new CreateWord(engWord.value, rusWord.value));
-    localStorage.setItem("words", JSON.stringify(words));
-    addWordToTable(words.length - 1);
-    engWord.value = null;
-    rusWord.value = null;
+    words.push(new CreateWord(engWord.value, rusWord.value))
+    localStorage.setItem('words', JSON.stringify(words))
+    addWordToTable(words.length - 1)
+    engWord.value = null
+    rusWord.value = null
   }
-});
+})
 
 function CreateWord(english, russian) {
-  this.english = english;
-  this.russian = russian;
+  this.english = english
+  this.russian = russian
 }
 
 const deliteWord = (e) => {
-  const rowIndex = e.target.parentNode.parentNode.rowIndex;
-  e.target.parentNode.parentNode.parentNode.remove();
-  words.splice(rowIndex, 1);
-  localStorage.removeItem("words");
-  localStorage.setItem("words", JSON.stringify(words));
-};
+  const rowIndex = e.target.parentNode.parentNode.rowIndex
+  e.target.parentNode.parentNode.parentNode.remove()
+  words.splice(rowIndex, 1)
+  localStorage.removeItem('words')
+  localStorage.setItem('words', JSON.stringify(words))
+}
 
-const addEventDelite = () => {
-  if (words.length > 0) {
-    btnsDelete = document.querySelectorAll(".button-delit");
-    for (let btn of btnsDelete) {
-      btn.addEventListener("click", (e) => {
-        deliteWord(e);
-      });
-    }
-  }
-};
+// const addEventDelite = () => {
+//   if (words.length > 0) {
+//     btnsDelete = document.querySelectorAll('.button-delit')
+//     for (let btn of btnsDelete) {
+//       btn.addEventListener('click', (e) => {
+//         deliteWord(e)
+//       })
+//     }
+//   }
+// }
 
-addEventDelite();
+// addEventDelite()

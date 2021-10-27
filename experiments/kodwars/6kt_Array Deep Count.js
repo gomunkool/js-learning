@@ -1,20 +1,17 @@
-function deep(a) {
+function deepCount(a) {
   let count = 0
-  function deep1(a) {
-    console.log(a)
-    for (let i = 0; i < a.length; i++) {
+  function deep1(b) {
+    for (let i = 0; i < b.length; i++) {
       count++
-      console.log(a[i])
-      if (typeof a[i] === 'object') {
-        deep1(a[i])
+      if (typeof b[i] === 'object') {
+        deep1(b[i])
       }
     }
     return count
   }
 
-  return deep1
+  return deep1(a)
 }
 
-let deepCount = deep()
-
-console.log(deepCount([[[[[[[[[]]]]]]]]]))
+console.log(deepCount([[[23, 21, [[17, 20, [[]]]]]], 5, 0]))
+console.log(deepCount([[[23, 21, [[17, 20, [[]]]]]], 5, 0]))
